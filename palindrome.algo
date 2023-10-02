@@ -1,0 +1,20 @@
+FUNCTION palindrome (mot : STRING) : BOOLEAN
+VAR
+    
+BEGIN
+
+
+   IF (lenght(mot)<=1) THEN
+    return true;
+   END_IF
+   IF (mot[0]=mot[lenght(mot)-1]) THEN
+    return palindrome (sous-chaine(mot,1,lenght(mot)-2));
+   ELSE
+    return false;
+    
+   END_IF
+   
+    
+END
+
+
